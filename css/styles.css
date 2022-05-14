@@ -137,8 +137,29 @@ form {
    flex-direction: column;
    align-items: center;
    margin-top: 100px;
+   border-left: 6px solid #B9D0DD;
+   height: 2000px;
+   border-right: 6px solid #B9D0DD;;
+   height: 700px;
+   margin-left: 300px;
+   margin-right: 300px;
     
-}    
+}  
+
+@media screen and (max-width: 1000px) {
+    form {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    form {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
 
 input {
     width: 300px;
@@ -150,6 +171,8 @@ input {
     
   
 }
+
+
 
 
 #message {
@@ -164,3 +187,8 @@ input {
     border: none;
     margin-top: 30px;
 }
+
+.error {
+    color: palevioletred;
+}
+
